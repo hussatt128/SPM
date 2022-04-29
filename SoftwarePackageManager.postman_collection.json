@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "3049d6ed-f65b-4b3e-87ce-5a1ecc6209a4",
+		"name": "SoftwarePackageManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List all packages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "oebmkl0hFF",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "API_KEY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "API_KEY",
+						"value": "oebmkl0hFF",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 6,\r\n  \"name\": \"S6\",\r\n  \"version\": \"0.1\",\r\n  \"status\": \"created\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/Packages/GetPackages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"Packages",
+						"GetPackages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Package",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "oebmkl0hFF",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "API_KEY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"Id\": 2,\r\n        \"Name\": \"Package 2\",\r\n        \"Version\": \"1.0\",\r\n        \"Status\": \"created\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/Packages/CreatePackage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"Packages",
+						"CreatePackage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Package",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "oebmkl0hFF",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "API_KEY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"Id\": 4,\r\n        \"Name\": \"Package 3\",\r\n        \"Version\": \"1.0\",\r\n        \"Status\": \"created\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/Packages/UpdatePackage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"Packages",
+						"UpdatePackage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Package ",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "oebmkl0hFF",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "API_KEY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/Packages/DeletePackage/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"Packages",
+						"DeletePackage",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download package",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "oebmkl0hFF",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "API_KEY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/Packages/Download/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"Packages",
+						"Download",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activate package",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "oebmkl0hFF",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "API_KEY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/Packages/Activate/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"Packages",
+						"Activate",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
